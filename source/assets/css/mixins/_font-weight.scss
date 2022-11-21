@@ -1,0 +1,15 @@
+$light: 300;
+$normal: 400;
+$bold: 500;
+
+@mixin font-weight($weight) {
+	@if $weight == "light" {
+		font-weight: 300;
+	}
+	@if $weight == "normal" {
+		font-weight: 400;
+	}
+	@if $weight == "bold" {
+		font-weight: 500;
+	}
+}

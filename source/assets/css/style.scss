@@ -1,0 +1,33 @@
+@import '_*';
+@import 'mixins/*';
+@import 'base/*';
+@import 'components/*';
+
+html {
+	font-family: 'Helvetica Neue LT', 'Helvetica Neue', 'Helvetica', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	font-weight: 400;
+	user-select: none;
+	-webkit-user-drag: false;
+}
+
+body {
+	color: $dark;
+	overflow: hidden;
+}
+
+h1 {
+	font-size: 200%;
+	font-size: 30px;
+	font-weight: 500;
+}
+
+button {
+	cursor: pointer;
+}
+
+*:focus {
+	outline: none;
+}

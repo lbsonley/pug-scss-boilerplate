@@ -1,0 +1,29 @@
+@function ease-back() {
+	@return cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@function ease-back-strong() {
+	@return cubic-bezier(0.175, 0.885, 0.32, 1.6);
+}
+
+@function ease-in-quart() {
+	@return cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+@function ease-out-quart() {
+	@return cubic-bezier(0.165, 0.840, 0.440, 1.000);
+}
+@function ease-in-out-quart() {
+	@return cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+// eases a little in but much out
+@function ease-in-out() {
+	@return cubic-bezier(0.420, 0.000, 0.175, 1.000);
+}
+
+@function ease-out-slow() {
+	@return cubic-bezier(.11,.74,.35,.92);
+}
+
+@function ease-out-superslow() {
+	@return cubic-bezier(0.09, 0.82, 0.18, 0.96);
+}

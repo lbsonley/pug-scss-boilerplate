@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+html(lang="en")
+	//
+		Proudly dafaf
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+		// Google Tag Manager
+		//- script.
+		//- 	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-K4ZGQF');
+		// End Google Tag Manager
+
+		link(rel="alternate" hreflang="en" href=`${$t.meta.site}/en/`)
+		link(rel="alternate" hreflang="de" href=`${$t.meta.site}/de/`)
+		link(rel="alternate" hreflang="fr" href=`${$t.meta.site}/fr/`)
+		link(rel="alternate" hreflang="it" href=`${$t.meta.site}/it/`)
+
+		meta(name="description" content=$t.meta.description)
+		meta(itemprop="description" content=$t.meta.description)
+
+		meta(name="twitter:card" content="summary")
+		meta(name="twitter:title" content=$t.meta.title)
+		meta(name="twitter:description" content=$t.meta.description)
+		meta(property="og:title" content=$t.meta.title)
+		meta(property="og:image" content=`${$t.meta.site}/assets/img/social-preview.jpg?v=20211129`)
+		meta(property="og:type" content="article")
+		meta(property="og:url" content=`${$t.meta.site}/${$localeName}`)
+		meta(property="og:description" content=$t.meta.description)
+		meta(property="og:site_name" content=$t.meta.name)
+		meta(name="author" content=$t.meta.name)
+		meta(name="twitter:creator" content=$t.meta.name)
+		meta(itemprop="name" content=$t.meta.title)
+
+		link(rel="icon" type="image/png" href="https://media.myswitzerland.com/image/fetch/c_limit,w_16,h_16/https://www.myswitzerland.com/-/media/st/common/favicons/classic/favicon.png" sizes="16x16")
+		link(rel="icon" type="image/png" href="https://media.myswitzerland.com/image/fetch/c_limit,w_32,h_32/https://www.myswitzerland.com/-/media/st/common/favicons/classic/favicon.png" sizes="32x32")
+		link(rel="icon" type="image/png" href="https://media.myswitzerland.com/image/fetch/c_limit,w_96,h_96/https://www.myswitzerland.com/-/media/st/common/favicons/classic/favicon.png" sizes="96x96")
+		link(rel="apple-touch-icon"  href="https://media.myswitzerland.com/image/fetch/c_limit,w_120,h_120/https://www.myswitzerland.com/-/media/st/common/favicons/appletouch/apple-touch-icon.png")
+		link(rel="apple-touch-icon" sizes="180x180" href="https://media.myswitzerland.com/image/fetch/c_limit,w_180,h_180/https://www.myswitzerland.com/-/media/st/common/favicons/appletouch/apple-touch-icon.png")
+		link(rel="apple-touch-icon" sizes="152x152" href="https://media.myswitzerland.com/image/fetch/c_limit,w_152,h_152/https://www.myswitzerland.com/-/media/st/common/favicons/appletouch/apple-touch-icon.png")
+		link(rel="apple-touch-icon" sizes="167x167" href="https://media.myswitzerland.com/image/fetch/c_limit,w_167,h_167/https://www.myswitzerland.com/-/media/st/common/favicons/appletouch/apple-touch-icon.png")
+
+
+		//- link(href="https://fonts.googleapis.com/css?family=Abril+Fatface|Knewave|Lily+Script+One|Oleo+Script+Swash+Caps|Vampiro+One&display=swap" rel="stylesheet")
+
+		link(rel="stylesheet" href="/assets/css/style.css")
+		script.
+			if (!window.Symbol || !window.Promise) {
+				document.write('<script defer crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=es6"><'+'/script>');
+			}
+		script(src="/assets/js/main.js" defer)
+
+		block style
+
+		block pagetitle
+			title #{$t.global.title}
+
+		// OneTrust Cookies Consent Notice start for myswitzerland.com
+		//- script(
+		//- 	src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
+		//- 	type="text/javascript"
+		//- 	charset="UTF-8"
+		//- 	data-domain-script="0e4eb202-ab02-40ca-81ed-4f650c18b561"
+		//- )
+		//- script.
+		//- 	function OptanonWrapper() { }
+		// OneTrust Cookies Consent Notice end for myswitzerland.com
+
+	body
+
+		// Google Tag Manager (noscript)
+		// noscript: iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-K4ZGQF" height="0" width="0" style="display:none;visibility:hidden")
+		// End Google Tag Manager (noscript)
+
+		block header
+			header.SiteHeader
+				.SiteHeader--metanav
+					.Menu
+						button.Menu--button(type="button" onclick="this.parentNode.classList.toggle('open')")
+							| #{$t.button.menu}
+							span.Menu--button--inner
+
+						#MenuContent.Menu--content
+							a.Menu--item(href=$t.link.shuffle.url)= $t.link.shuffle.label
+
+							button#ot-sdk-btn.Menu--item.ot-sdk-show-settings #{$t.link.cookiesettings}
+
+							.LanguageSelector
+								p #{$t.locale.chooseLanguage}
+								ul.LanguageSelector--list
+									each name, slug in $t.locale.language
+										li.LanguageSelector--item(class=(slug === $localeName ? 'active' : ''))
+											a.LanguageSelector--link(href=`/${slug}`) #{name}
+
+
+		block content
+
+
+		include /components/_font_tracking.pug

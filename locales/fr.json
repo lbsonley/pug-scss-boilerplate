@@ -1,0 +1,39 @@
+{
+	"global": {
+		"title": "Christmas Card | Dept Switzerland"
+	},
+	"intro": {
+		"title": "Der Dept Switzerland Weihnachts Karte",
+		"text": "Wohl der Digitalster Musicalster Weihnachtskarte der Schweiz im 2022",
+		"cta": "Jetzt losen"
+	},
+	"link": {
+		"home": {
+			"label": "Visiter MySwitzerland",
+			"url": "/"
+		},
+		"shuffle": {
+			"label": "Shuffle",
+			"url": "https://myswitzerland.com/adventcalendar-winners"
+		},
+		"cookiesettings": "Cookie Settings"
+	},
+	"button": {
+		"menu": "Liens et langue"
+	},
+	"locale": {
+		"chooseLanguage": "Sélectionner la langue:",
+		"language": {
+			"de": "Deutsch",
+			"fr": "Français",
+			"it": "Italiano",
+			"en": "English"
+		}
+	},
+	"meta": {
+		"name": "Suisse Tourisme",
+		"title": "Der Dept Switzerland Weihnachts Karte",
+		"description": "Wohl der Digitalster Musicalster Weihnachtskarte der Schweiz im 2022",
+		"site": "https://xmas.dept.ch"
+	}
+}

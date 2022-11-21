@@ -1,0 +1,66 @@
+{
+	"name": "creative-boilerplate",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"engines": {
+		"node": ">=12.0.0"
+	},
+	"browserslist": [
+		"defaults",
+		"> 1%",
+		"iOS >= 9.3"
+	],
+	"eslintConfig": {
+		"extends": "plugin:unicorn/recommended"
+	},
+	"prettier": {
+		"printWidth": 100,
+		"useTabs": true,
+		"singleQuote": true
+	},
+	"scripts": {
+		"start": "gulp live",
+		"dev": "gulp live",
+		"build": "gulp build",
+		"gulp": "gulp",
+		"lang": "gulp lang",
+		"deploy": "netlify deploy --dir=build --prod",
+		"tiles": "node tasks/tiles.js"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"autoprefixer": "^9.6.1",
+		"browser-sync": "^2.18.13",
+		"clean-css": "^4.2.1",
+		"csv-parse": "^4.4.5",
+		"eslint": "8.28.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-prettier": "4.2.1",
+		"eslint-plugin-unicorn": "^45.0.0",
+		"follow-redirects": "^1.15.2",
+		"gulp": "^4.0.2",
+		"gulp-clean-css": "^4.2.0",
+		"gulp-htmlmin": "^5.0.1",
+		"gulp-i18n-pug": "^1.1.0",
+		"gulp-postcss": "^8.0.0",
+		"gulp-rename": "^1.2.2",
+		"gulp-sass": "^5.0.0",
+		"gulp-sass-bulk-import": "^1.0.1",
+		"gulp-sourcemaps": "^2.6.1",
+		"gulp-util": "^3.0.8",
+		"map-stream": "^0.0.7",
+		"prettier": "2.7.1",
+		"require-all": "^3.0.0",
+		"rimraf": "^3.0.0",
+		"rollup": "^1.19.4",
+		"rollup-plugin-buble": "^0.19.8",
+		"rollup-plugin-commonjs": "^10.0.2",
+		"rollup-plugin-node-resolve": "^5.2.0",
+		"rollup-plugin-uglify": "^6.0.2",
+		"rollup-stream": "^1.24.1",
+		"sass": "^1.56.1",
+		"through2": "^3.0.1",
+		"vinyl-source-stream": "^2.0.0"
+	}
+}

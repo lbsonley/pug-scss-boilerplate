@@ -1,0 +1,17 @@
+image: hinderlingvolkart/node-build:16
+
+clone:
+  lfs: true
+
+pipelines:
+  default:
+    - step:
+        caches:
+          - node
+        script:
+          - yarn
+          - yarn run build
+          - save2repo
+          - hv-publish
+        artifacts:
+          - build/**

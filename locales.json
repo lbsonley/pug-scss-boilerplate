@@ -1,0 +1,29 @@
+{
+	"global": {
+		"title": "#{$t.global.title}"
+	},
+	"intro": {
+		"title": "#{$t.intro.title}",
+		"text": "#{$t.intro.text}",
+		"cta": "#{$t.intro.cta}"
+	},
+	"link": {
+		"home": {
+			"label": "#{$t.link.home.label}",
+			"url": "#{$t.link.home.url}"
+		},
+		"shuffle": {
+			"label": "#{$t.link.shuffle.label}",
+			"url": "#{$t.link.shuffle.url}"
+		}
+	},
+	"lang": {
+		"label": "#{$t.lang.label}",
+		"locals": {
+			"de": "#{$t.lang.locals.de}",
+			"fr": "#{$t.lang.locals.fr}",
+			"it": "#{$t.lang.locals.it}",
+			"en": "#{$t.lang.locals.en}"
+		}
+	}
+}

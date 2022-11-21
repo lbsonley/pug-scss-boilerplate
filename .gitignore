@@ -1,0 +1,5 @@
+node_modules
+build
+*.pxd
+/data/google.csv
+.DS_Store

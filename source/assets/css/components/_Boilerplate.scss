@@ -1,0 +1,22 @@
+.tutorial {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tutorial--inner {
+    position: relative;
+    padding: 30px;
+}
+
+.tutorial--title {
+    font-size: 64px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.tutorial--description {
+    font-size: 32px;
+    line-height: 1.3;
+}

@@ -1,0 +1,55 @@
+#flying-focus {
+	position: absolute;
+	margin: 0;
+	top: -100px;
+	background: transparent;
+	transition-property: left, top, width, height, opacity;
+	transition-timing-function: cubic-bezier(0, 0.2, 0, 1);
+	visibility: hidden;
+	pointer-events: none;
+	display: none;
+
+	> svg {
+		position: absolute;
+		top: -9px;
+		left: -9px;
+		width: calc(100% + 18px);
+		height: calc(100% + 18px);
+		filter: blur(1px);
+
+		> rect {
+			stroke-width: 10;
+			stroke: $red;
+			stroke-linecap: butt;
+			stroke-dasharray: 5 9;
+			animation: stroke-anim 0.5s infinite linear;
+			fill: none;
+		}
+	}
+}
+
+@keyframes stroke-anim {
+	0% {
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dashoffset: 14;
+	}
+}
+
+#flying-focus.flying-focus_visible {
+	visibility: visible;
+	z-index: 10000000;
+	display: block;
+}
+
+#flying-focus:before {
+	content: '';
+	position: absolute;
+	top: -7px;
+	left: -7px;
+	bottom: -7px;
+	right: -7px;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.9) inset, 0 0 15px 2px rgba(255, 255, 255, 0.9);
+}

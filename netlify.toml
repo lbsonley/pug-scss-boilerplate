@@ -1,0 +1,32 @@
+[build]
+publish = "build"
+command = "yarn run build"
+
+[[redirects]]
+from = "/"
+to = "/de"
+status = 302
+force = true
+conditions = {Language = ["de"]}
+
+[[redirects]]
+from = "/"
+to = "/fr"
+status = 302
+force = true
+conditions = {Language = ["fr"]}
+
+[[redirects]]
+from = "/"
+to = "/it"
+status = 302
+force = true
+conditions = {Language = ["it"]}
+
+[[redirects]]
+from = "/"
+to = "/en"
+status = 302
+force = true
+conditions = {Language = ["en"]}
+
