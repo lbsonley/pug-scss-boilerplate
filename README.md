@@ -1,5 +1,6 @@
-# My Switzerland Adventskalender
+# Simple Project Boilerplate
 
+HTML Templates with Pug. Styling with SCSS. Vanilla Javascript. Gulp task for importing internationalization files from Google Sheets.
 ## Localization
 
 [Edit this sheet](https://docs.google.com/spreadsheets/d/1OKFriFyzpZhV6XEzPE3T7F6j6Pk10PMdi-oIy1-iYN8)

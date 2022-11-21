@@ -1,4 +1,4 @@
-image: hinderlingvolkart/node-build:16
+image: hinderlingvolkart/node-build:18
 
 clone:
   lfs: true
